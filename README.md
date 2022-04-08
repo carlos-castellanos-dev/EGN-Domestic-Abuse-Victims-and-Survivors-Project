@@ -1,5 +1,5 @@
 # EGN-Domestic-Abuse-Victims-and-Survivors-Project
-# Website to Assist Domestic Abuse Victims and Survivors 
+Website to Assist Domestic Abuse Victims and Survivors 
 # Project Overview:  
 This project revolves around the research conducted by Professor Joan Meier, which 
 states that victims of domestic abuse have known for decades that woman who report abuse 
