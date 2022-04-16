@@ -56,65 +56,65 @@
 									<h3>Data Entry Form</h3>
                                     
                                     <div class="testbox">
-                                      <form action="/" method="post">
+                                      <form action="connect.php" method="post">
                                        
                                         <h5>Victim Information</h5>
                                         <div class="item">
                                           <p>Victim's Full Legal Name </p>
                                           <div class="name-item">
-                                            <input type="text" name="name" placeholder="First" />
-                                            <input type="text" name="name" placeholder="Last" />
+                                            <input type="text" name="vfirstname" placeholder="First" />
+                                            <input type="text" name="vlastname" placeholder="Last" />
                                           </div>
                                         </div>
 
                                         <div class="item">
                                           <p>Email</p>
-                                          <input type="text" name="name"/>
+                                          <input type="text" name="vemail"/>
                                         </div>
                                         <div class="item">
                                           <p>Phone</p>
-                                          <input type="text" name="name"/>
+                                          <input type="text" name="vnumber"/>
                                         </div>
                                         
                                           <h5>Court Professional Information</h5>
                                         <div class="item">
                                           <p>Victim's Full Legal Name </p>
                                           <div class="name-item">
-                                            <input type="text" name="name" placeholder="First" />
-                                            <input type="text" name="name" placeholder="Last" />
+                                            <input type="text" name="cpfirstname" placeholder="First" />
+                                            <input type="text" name="cplastname" placeholder="Last" />
                                           </div>
                                         </div>
 
                                         <div class="item">
                                           <p>Email</p>
-                                          <input type="text" name="name"/>
+                                          <input type="text" name="cpemail"/>
                                         </div>
                                         <div class="item">
                                           <p>Phone</p>
-                                          <input type="text" name="name"/>
+                                          <input type="text" name="cpnumber"/>
                                         </div>
                                           
                                         <h5>Information about your experience</h5>
                                         <div class="item">
                                           <p>First date on which the events or issues occurred</p>
-                                          <input type="text" name="name" placeholder="mm/dd/yyyy" />
+                                          <input type="text" name="date" placeholder="mm/dd/yyyy" />
                                           <i class="fas fa-calendar-alt"></i>
                                         </div>
                                         <div class="item">
                                           <p>Name(s) of the person(s) involved</p>
-                                          <textarea rows="5"></textarea>
+                                          <textarea rows="5" name="listname"></textarea>
                                         </div>
                                         <div class="item">
                                           <p>Please describe your experience in detail. Include the names of persons, locations, and dates involved. If this complaint is against specific person(s), please list their names and titles</p>
-                                          <textarea rows="5"></textarea>
+                                          <textarea rows="5" name="experience"></textarea>
                                         </div>
                                         <div class="item">
                                           <p>What was the outcome of your experience?</p>
-                                          <textarea rows="5"></textarea>
+                                          <textarea rows="5" name="outcome"></textarea>
                                         </div>
                                         <div class="item">
                                           <p>Any other information you want to provide?</p>
-                                          <textarea rows="5"></textarea>
+                                          <textarea rows="5" name="other"></textarea>
                                         </div>
                                         <div class="btn-block">
                                           <button type="submit" >SEND</button>
