@@ -14,7 +14,7 @@
     $other = $_POST['other'];
 
     //Database Connection
-    $conn = new mysqli('3.91.84.243','root','wur60ncWs5oO','entry_form')
+    $conn = new mysqli('localhost','dbmasteruser','VDG+}8WMuM+[KM5TBNEJyVN98hSJ1R)Z','dbmaster')
     if($conn-> connect_error){
         die('Connection Failed :'.$conn->connect_error);
     }else{
