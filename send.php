@@ -1,6 +1,6 @@
 <?php  
 if (isset($_POST['vfirstName']) && isset($_POST['vlastName'])) {
-	include 'db_conn.php';
+	include 'connect.php';
 
 	function validate($data){
        $data = trim($data);
