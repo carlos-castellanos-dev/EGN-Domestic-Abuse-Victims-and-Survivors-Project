@@ -17,4 +17,17 @@ function CloseCon($conn)
    
 ?>
 
+<?php  
+
+ $dbhost = "localhost";
+ $dbuser = "root";
+ $dbpass = "";
+ $db = "test";
+
+ $conn = mysqli_connect($sname, $uname, $password, $db_name);
+
+ if (!$conn) {
+	echo "Connection failed!";
+	exit();
+}
 
