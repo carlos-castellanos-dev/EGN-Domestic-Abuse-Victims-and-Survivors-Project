@@ -14,7 +14,7 @@
     $other = $_POST['other'];
 
     //Database Connection
-    $conn = new mysqli('localhost','dbmasteruser','VDG+}8WMuM+[KM5TBNEJyVN98hSJ1R)Z','dbmaster')
+    $conn = new mysqli('ls-3ddf96afc758a0f6cdeaa24ce90edcf1d293a292.cdmnpinl6gyw.us-east-1.rds.amazonaws.com','dbmasteruser','VDG+}8WMuM+[KM5TBNEJyVN98hSJ1R)Z','dbmaster')
     if($conn-> connect_error){
         die('Connection Failed :'.$conn->connect_error);
     }else{
