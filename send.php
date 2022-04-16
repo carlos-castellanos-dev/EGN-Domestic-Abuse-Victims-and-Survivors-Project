@@ -29,3 +29,5 @@ if (isset($_POST['vfirstName']) && isset($_POST['vlastName'])) {
 }else {
 	header("Location: index.html");
 }
+
+?>
