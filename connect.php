@@ -30,4 +30,5 @@ function CloseCon($conn)
 	echo "Connection failed!";
 	exit();
 }
+?>
 
