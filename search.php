@@ -38,6 +38,7 @@
 					</header>
 				</div>
 
+
 			<!-- Main -->
 				<div id="main-wrapper">
 					<div class="container">
@@ -46,49 +47,25 @@
 							<!-- Content -->
 								<article>
 
-									<h2>Share Your Experience</h2>
+									<h2>Search</h2>
 
 									<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
 									Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
 									Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi
 									consequat etiam lorem ipsum dolor sit amet nullam.</p>
 
-									<h3>Data Entry Form</h3>
-                                    
-                                    <div class="testbox">
-                                      <form action="send.php" method="post">
-                                       
-                                        <h5>Victim Information</h5>
-                                            <div class="item">
-                                                <p>Victim's Full Legal Name </p>
-                                                    <div class="name-item">
-                                                        <input type="text" name="vfirstName" placeholder="First" />
-                                                        <input type="text" name="vlastName" placeholder="Last" />
-                                            </div>
-
-                                            <div class="item">
-                                                <p>individuals who were involved</p>
-                                                <input type="text" name="vJudgesName" placeholder="Judge" />
-                                                <input type="text" name="vPoliceofficer" placeholder="Police officer" />
-                                                <input type="text" name="vLawyersname" placeholder="Lawyer's name" />
-                                                <input type="text" name="vchildreninvolved" placeholder="children if involved" />
-                                                <input type="text" name="vverdict" placeholder="Verdict" />
-                                            </div>  
-                                        </div>
-                                    </div>
-                                        <div class="btn-block">
-                                          <button type="submit" name='submit' >SEND</button>
-                                        </div>
-                                      </form>
-                                    </div>
-                                  
+									<h3>Look Up Information</h3>
+									<form action="#" method="post">
+                                    <input id="search" type="text" placeholder="Key Words">
+                                    <input id="submit" type="submit" value="Search">
+                                    </form>
 
 								</article>
 
 						</div>
 					</div>
 				</div>
-            
+
 			</div>
 
 		<!-- Scripts -->
@@ -102,3 +79,52 @@
 
 	</body>
 </html>
+
+
+<?php
+
+
+$dbhost = "localhost";
+ $dbuser = "root";
+ $dbpass = "tA5aWsE5mKbC";
+ $db = "test";
+
+ $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $db);
+
+ if (!$conn) {
+	echo "Connection failed here!";
+	exit();}
+
+	if (isset($_POST["submit"])){
+		$str = $_POST["search"];
+		$sth = $conn->prepare("SELECT * FROM 'search' WHERE (vJudgeName) OR (vPoliceofficer) OR (vLawyersname) = '$str' ");
+		$sth->setFetchMode(PDO::FETCH_OBJ);
+		$sth-> execute();
+
+		if($row = $sth->fetch())
+		{
+			?>
+			<br>
+			<table>
+				<tr>
+					<th> Judge Name</th>
+					<th> Police Officer</th>
+					<th> Lawyer</th>
+				</tr>
+				<tr>
+					<td><?php echo $row->vJudgeName; ?></td>
+					<td><?php echo $row->vPoliceofficer; ?> </td>
+					<td><?php echo $row->vLawyersname; ?> </td>
+				</tr>
+
+
+
+			<?php
+
+	}
+		else{
+			echo "Does not exist";
+		}
+
+
+	}
