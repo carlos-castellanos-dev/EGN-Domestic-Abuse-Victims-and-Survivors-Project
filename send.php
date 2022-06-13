@@ -11,12 +11,18 @@ if (isset($_POST['vfirstName']) && isset($_POST['vlastName'])) {
 
 	$vfirstName = validate($_POST['vfirstName']);
 	$vlastName = validate($_POST['vlastName']);
+	$vJudgesName = validate($_POST['vJudgesName']);
+	$vPoliceofficer = validate($_POST['vPoliceofficer']);
+	$vLawyersname = validate($_POST['vLawyersname']);
+	$vchildreninvolved = validate($_POST['vchildreninvolved']);
+	$vverdict = validate($_POST['vverdict']);
+
 
 	if (empty($vlastName) || empty($vfirstName)) {
 		header("Location: experience.html");
 	}else {
 
-		$sql = "INSERT INTO test(vfirstName, vlastName) VALUES('$vfirstName', '$vlastName')";
+		$sql = "INSERT INTO test(vfirstName, vlastName, vJudgesName, vPoliceofficer, vLawyersname, vchildreninvolved, vverdict) VALUES('$vfirstName', '$vlastName', '$vJudgesName', '$vPoliceofficer', '$vLawyersname', '$vchildreninvolved' ,'$vverdict')";
 		$res = mysqli_query($conn, $sql);
 
 		if ($res) {
