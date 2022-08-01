@@ -10,6 +10,86 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    	<script type="text/javascript">
+      	google.charts.load('current', {'packages':['corechart']});
+      	google.charts.setOnLoadCallback(drawChart);
+
+      	function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Abuse'],
+          ['2004',  1000,  ],
+          ['2005',  1170,  ],
+          ['2006',  660,   ],
+          ['2007',  1030,  ]
+        ]);
+
+        var options = {
+          title: 'Abuse through out the years',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    
+	</script>
+
+	
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load("current", {packages:["corechart"]});
+  google.charts.setOnLoadCallback(drawChart);
+  function drawChart() {
+	var data = google.visualization.arrayToDataTable([
+	  ['Task', 'types of abuse'],
+	  ['sexual',     11],
+	  ['physical',      2],
+	  ['Emotional',  2]
+	]);
+
+	var options = {
+	  title: 'Types of abuse',
+	  pieHole: 0.4,
+	};
+
+	var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+	chart.draw(data, options);
+  }
+</script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {'packages':['bar']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+	var data = google.visualization.arrayToDataTable([
+	  ['Year', 'Sexual', 'physical', 'Emotional'],
+	  ['2014', 1000, 400, 200],
+	  ['2015', 1170, 460, 250],
+	  ['2016', 660, 1120, 300],
+	  ['2017', 1030, 540, 350]
+	]);
+
+	var options = {
+	  chart: {
+		title: 'Abuse throught out years',
+		subtitle: 'Sexual, physical, and Emotional: 2014-2017',
+	  }
+	};
+
+	var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+	chart.draw(data, google.charts.Bar.convertOptions(options));
+  }
+</script>
+
+
 	</head>
 	<body class="is-preload no-sidebar">
 		<div id="page-wrapper">
@@ -64,20 +144,26 @@
 									Donec sagittis massa et leo semper a scelerisque metus faucibus. Morbi congue mattis mi.
 									Phasellus sed nisl vitae risus tristique volutpat. Cras rutrum commodo luctus.</p>
 
-									<p>Phasellus odio risus, faucibus et viverra vitae, eleifend ac purus. Praesent mattis, enim
-									quis hendrerit porttitor, sapien tortor viverra magna, sit amet rhoncus nisl lacus nec arcu.
-									Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt. Mauris dolor urna,
-									fringilla vel malesuada ac, dignissim eu mi. Praesent mollis massa ac nulla pretium pretium.
-									Maecenas tortor mauris, consectetur pellentesque dapibus eget, tincidunt vitae arcu.
-									Vestibulum purus augue, tincidunt sit amet iaculis id, porta eu purus.</p>
-
-								</article>
-
-						</div>
+								</article>	
+						</div>	
 					</div>
 				</div>
 			</div>
+			<div>
+				<section>
+					<article>
+					<div id="stats" style="text-align: center;"><h3>Statistics</h3></div>
+	
+					<div id="curve_chart" style="width: 500px; height: 300px; display: inline-block; "></div> 
+				
+					<div id="donutchart" style="width: 500px; height: 300px; display: inline-block; "></div>
 
+					<div id="columnchart_material" style="width: 500px; height: 300px; display: inline-block;"></div>
+				</article>
+				</section>
+			</div>
+			
+			
 		<!-- Scripts -->
 
 			<script src="assets/js/jquery.min.js"></script>
