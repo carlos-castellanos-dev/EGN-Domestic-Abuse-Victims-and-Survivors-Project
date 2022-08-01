@@ -10,7 +10,6 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="icon" href="images/favi.png">
 		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
        <script type="text/javascript">
             function yesnoCheck() {
@@ -74,9 +73,9 @@
                                                     <div class="name-item">
                                                         <input type="text" name="vfirstName" placeholder="First Name" required />
                                                         <input type="text" name="vlastName" placeholder="Last Name" required />
-                                                        <input type="text" name="address_1" placeholder="Address" required/>
+                                                        <input type="text" name="address" placeholder="Address" required/>
                                                         <input type="text" name="city" placeholder="City" required/>
-                                                        <select name="state_1" required>
+                                                        <select name="state" required>
                                                             <option value="">State</option>
                                                             <option value="AL">Alabama</option>
                                                             <option value="AK">Alaska</option>
@@ -135,10 +134,10 @@
                                                         <input type="text" name="phone" placeholder="Phone Number (###-###-####)" required/>
                                                         <input type="email" name="email" placeholder="Email" />
                                                         <input type="text" name="dob" placeholder="Date of Birth (mm/dd/yyyy)" required />
-                                                        <select name="reporter_gender" required>
+                                                        <select name="gender" required>
                                                             <option value="">Gender</option>
-                                                            <option value="male">Male</option>
-                                                            <option value="female">Female</option>
+                                                            <option value="">Male</option>
+                                                            <option value="">Female</option>
                                                         </select>  
                                             </div>
                                          </div>
@@ -147,139 +146,107 @@
                                             <div class="item">
                                                 <p>Did you experience any of the following in your relationship? (Check all that apply)</p>
                                                     <div class="name-item">
-                                                        <label class="contain">
-                                                            <input type="checkbox" name="experiences[]" value="Physical Abuse or Assault" /> Physical Abuse or Assault
-                                                            <span class="checkmark"></span>
+                                                 <label>
+                                                            <input type="checkbox" name=""/> Physical Abuse or Assault
                                                          </label>
-                                             </div>
-                                                <div class="name-item">
-                                                        <label class="contain">
-                                                            <input type="checkbox" name="experiences[]" value="Emotional Abuse or Manipulation" /> Emotional Abuse or Manipulation
-                                                            <span class="checkmark"></span>
+                                                        <label>
+                                                            <input type="checkbox" name="" /> Emotional Abuse or Manipulation
                                                          </label>
-                                             </div> 
-                                                <div class="name-item">
-                                                        <label class="contain">
-                                                            <input type="checkbox" name="experiences[]" value="Verbal Abuse, Threats, or Denigration" /> Verbal Abuse, Threats, or Denigration
-                                                            <span class="checkmark"></span>
+                                                        <label>
+                                                            <input type="checkbox" name=""/> Verbal Abuse, Threats, or Denigration
                                                          </label>
-                                             </div> 
-                                                <div class="name-item">
-                                                        <label class="contain">
-                                                            <input type="checkbox" name="experiences[]" value="Sexual Abuse, Assault or Coercion" /> Sexual Abuse, Assault or Coercion
-                                                            <span class="checkmark"></span>
+                                                        <label>
+                                                            <input type="checkbox" name=""/> Sexual Abuse, Assault or Coercion
                                                          </label>
                                              </div> 
                                                  <div class="name-item">
-                                                        <label class="contain">
-                                                            <input type="checkbox" name="experiences[]" value="Coercive Control" /> Coercive Control
-                                                            <span class="checkmark"></span>
+                                                 <label>
+                                                            <input type="checkbox" name=""/> Coercive Control
                                                          </label>
-
-                                             </div>
-                                                <div class="name-item">
-                                                        <label class="contain">
-                                                            <input type="checkbox" name="experiences[]" value="Post-Separation Litigation Abuse" /> Post-Separation Litigation Abuse
-                                                            <span class="checkmark"></span>
+                                                        <label>
+                                                            <input type="checkbox" name="" /> Post-Separation Litigation Abuse
                                                          </label>
-                                             </div> 
-                                                <div class="name-item">
-                                                        <label class="contain">
-                                                            <input type="checkbox" name="experiences[]" value="Stalking or Digital Surveillance"   /> Stalking or Digital Surveillance
-                                                            <span class="checkmark"></span>
+                                                        <label>
+                                                            <input type="checkbox" name=""/> Stalking or Digital Surveillance
+                                                         </label>
+                                                        <label>
+                                                            <input type="checkbox" name=""/> Other
                                                          </label>
                                              </div> 
-                                                <div class="name-item">
-                                                        <label class="contain">
-                                                            <input type="checkbox" name="experiences[]" value="Other"   /> Other
-                                                            <span class="checkmark"></span>
-                                                         </label>
-                                             </div> 
-          
                                              </div>
                                              <h5>Court Information *</h5>
                                             <div class="item">
                                                     <div class="name-item">
-                                                        <input type="text" name="name_of_court" placeholder="Name of Court" required />
-                                                        <input type="text" name="county_of_court" placeholder="County of Court" required />
-                                                        <input type="text" name="state_of_court" placeholder="State of Court" required />
+                                                        <input type="text" name="" placeholder="Name of Court" required />
+                                                        <input type="text" name="" placeholder="County of Court" required />
+                                                        <input type="text" name="" placeholder="State of Court" required />
                                                         <input type="text" name="vJudgesName" placeholder="Name of Judge" required />
-                                                        <input type="text" name="docket_number" placeholder="Docket Number" required />
+                                                        <input type="text" name="" placeholder="Docket Number" required />
                                                         <input type="text" name="vLawyersname" placeholder="Assigned Attorney" required />
-                                                        <input type="text" name="other_partys_attorney" placeholder="Other Party's Attorney" required />
-                                                        <input type="text" name="attorney_for_children" placeholder="Attorney for Child or Guardian Ad Litem" required /> 
+                                                        <input type="text" name="" placeholder="Other Party's Attorney" required />
+                                                        <input type="text" name="" placeholder="Attorney for Child or Guardian Ad Litem" required /> 
                                             </div>
                                          </div>
                                              <h5>Did you make claims in your custody petition or counter-petition that you and/or your children were a victim/survivor of domestic abuse, child abuse, or coercive control?</h5>
                                             <div class="item">
                                                     <div class="name-item">
-                                                    <select name="custody_petition" required>
+                                                    <select name="" required>
                                                             <option value="">Select</option>
-                                                            <option value="yes">Yes</option>
-                                                            <option value="no">No</option>
+                                                            <option value="">Yes</option>
+                                                            <option value="">No</option>
                                                         </select>     
                                             </div>
                                          </div>
                                              <h5>Did you have any witnesses below testify or submit evidence confirming the abuse above?</h5>
                                             <div class="item">
                                                     <div class="name-item">
-                                                    <select name="witness_testify" required>
+                                                    <select name="" required>
                                                             <option value="">Select</option>
-                                                            <option value="doctor">Doctor</option>
-                                                            <option value="pediatrician">Pediatrician</option>
-                                                            <option value="dentist">Dentist</option>
-                                                            <option value="pediatric_dentist">Pediatric Dentist</option>
-                                                            <option value="mental_health_professional">Mental Health Professional</option>
-                                                            <option value="police_officer">Police Officer</option>
-                                                            <option value="other_law_enforcement">Other Law Enforcement Professional</option>
-                                                            <option value="child_welfare_professional">Child Welfare Professional</option>
+                                                            <option value="">Doctor</option>
+                                                            <option value="">Pediatrician</option>
+                                                            <option value="">Dentist</option>
+                                                            <option value="">Pediatric Dentist</option>
+                                                            <option value="">Mental Health Professional</option>
+                                                            <option value="">Police Officer</option>
+                                                            <option value="">Other Law Enforcement Professional</option>
+                                                            <option value="">Child Welfare Professional</option>
                                                         </select>     
                                             </div>
                                          </div>
                                              <h5>What kind of evidence was submitted? (Check all that apply)</h5>
                                             <div class="item">
                                                     <div class="name-item">
-                                                         <label class="contain">
-                                                            <input type="checkbox" name="evidence[]" value="Photos of Abuse" /> Photos of Abuse
-                                                             <span class="checkmark"></span>
+                                                         <label>
+                                                            <input type="checkbox" name=""/> Photos of Abuse
+                                                         </label>
+                                                        <label>
+                                                            <input type="checkbox" name="" /> Medical Records
+                                                         </label>
+                                                        <label>
+                                                            <input type="checkbox" name=""/> Written or Oral Testimony
+                                                         </label>
+                                                        <label>
+                                                            <input type="checkbox" name=""/> Orders of Protection
                                                          </label>
                                          </div> 
-                                                 <div class="name-item">
-                                                        <label class="contain">
-                                                            <input type="checkbox" name="evidence[]" value="Medical Records" /> Medical Records
-                                                            <span class="checkmark"></span>
-                                                         </label>
-                                         </div> 
-                                                 <div class="name-item">
-                                                        <label class="contain">
-                                                            <input type="checkbox" name="evidence[]" value="Written or Oral Testimony" /> Written or Oral Testimony
-                                                            <span class="checkmark"></span>
-                                                         </label>
-                                         </div> 
-                                                 <div class="name-item">
-                                                        <label class="contain">
-                                                            <input type="checkbox" name="evidence[]" value="Orders of Protection"  /> Orders of Protection
-                                                            <span class="checkmark"></span>
-                                                         </label>
-                                         </div>       
                                              </div>
                                               <h5>Sex of other parent?</h5>
                                             <div class="item">
                                                     <div class="name-item">
-                                                    <select name="other_parent_gender" required>
+                                                    <select name="gender" required>
                                                             <option value="">Select</option>
-                                                            <option value="male">Male</option>
-                                                            <option value="female">Female</option>
+                                                            <option value="">Male</option>
+                                                            <option value="">Female</option>
                                                         </select>     
                                             </div>
                                          </div>
                                              <h5>Was there ever a child welfare investigation for child abuse or neglect with your child(ren)? (Y/N)</h5>
                                             <div class="item">
                                                     <div class="name-item">
-                                                  <select name = "vchildWelfare" onchange="yesnoCheck()">
+                                                  <select onchange="yesnoCheck()">
                                                         <option id="noCheck" value="">Select</option>
-                                                        <option id="yesCheck" value="yes">Yes</option>
-                                                        <option id="noCheck" value="no">No</option>
+                                                        <option id="yesCheck" value="">Yes</option>
+                                                        <option id="noCheck" value="">No</option>
                                                   </select> 
                                             </div>
                                          </div>
@@ -287,19 +254,19 @@
                                             <div class="item" id="ifYes" style="display: none;">
                                                     <div class="name-item">
                                                      <label>If yes, Did the child welfare investigator find the claims against you “indicated” or believe the abuse allegations were credible, or “unfounded?”</label> 
-                                                    <select name = "vyouinvestigatorClaim" onchange="yesnoCheck()">
+                                                    <select onchange="yesnoCheck()">
                                                         <option id="noCheck" value="">Select</option>
-                                                        <option id="yesCheck" value="Indicated">Indicated</option>
-                                                        <option id="noCheck" value="Unfounded">Unfounded</option>
+                                                        <option id="yesCheck" value="">Indicated</option>
+                                                        <option id="noCheck" value="">Unfounded</option>
                                                   </select>   
                                             </div>
                                                 
                                                 <div class="name-item">
                                                      <label>If the other parent, Did the child welfare investigator find the other parent “indicated” or believe the abuse allegations were credible, or “unfounded?”</label> 
-                                                    <select name = "votherparentClaim"onchange="yesnoCheck()">
+                                                    <select onchange="yesnoCheck()">
                                                         <option id="noCheck" value="">Select</option>
-                                                        <option id="yesCheck" value="Indicated">Indicated</option>
-                                                        <option id="noCheck" value="Unfounded">Unfounded</option>
+                                                        <option id="yesCheck" value="">Indicated</option>
+                                                        <option id="noCheck" value="">Unfounded</option>
                                                   </select>   
                                             </div>
                                          </div>
@@ -307,10 +274,10 @@
                                               <h5>Did the other parent claim “Parental Alienation” at any point during the custody case (in papers or orally in colloquy or testimony)? (Y/N)</h5>
                                             <div class="item">
                                                     <div class="name-item">
-                                                    <select name="vparentalAlienation" required>
+                                                    <select name="" required>
                                                             <option value="">Select</option>
-                                                            <option value="yes">Yes</option>
-                                                            <option value="no">No</option>
+                                                            <option value="">Yes</option>
+                                                            <option value="">No</option>
                                                     </select>     
                                             </div>
                                          </div>
@@ -318,86 +285,56 @@
                                              <h5>Did anyone else involved in your case claim you were engaging in “parental alienation” and/or believe the other parent’s claim against you of “parental alienation?”  (check all that apply)</h5>
                                             <div class="item">
                                                     <div class="name-item">
-                                                         <label class="contain">
-                                                            <input type="checkbox" name="alienation[]" value="Your Doctor" /> Your Doctor
-                                                            <span class="checkmark"></span>
+                                                         <label>
+                                                            <input type="checkbox" name=""/> Your Doctor
+                                                         </label>
+                                                        <label>
+                                                            <input type="checkbox" name=""/> Child’s Pediatrician
+                                                         </label>
+                                                        <label>
+                                                            <input type="checkbox" name=""/> Your Dentist
+                                                         </label>
+                                                         <label>
+                                                            <input type="checkbox" name=""/> Child’s Pediatric Dentist
                                                          </label>
                                          </div>      
                                                 <div class="name-item">
-                                                        <label class="contain">
-                                                            <input type="checkbox" name="alienation[]" value="Childs Pediatrician"  /> Child’s Pediatrician
-                                                            <span class="checkmark"></span>
+                                                        <label>
+                                                            <input type="checkbox" name=""/> Your Mental Health Professional
                                                          </label>
-                                         </div>      
-                                                <div class="name-item">
-                                                        <label class="contain">
-                                                            <input type="checkbox" name="alienation[]" value="Your Dentist"  /> Your Dentist
-                                                            <span class="checkmark"></span>
+                                                         <label>
+                                                            <input type="checkbox" name=""/> Other Parent’s Mental Health Professional
                                                          </label>
-                                         </div>      
-                                                <div class="name-item">
-                                                         <label class="contain">
-                                                            <input type="checkbox" name="alienation[]"  value="Childs Pediatric Dentist" /> Child’s Pediatric Dentist
-                                                             <span class="checkmark"></span>
+                                                         <label>
+                                                            <input type="checkbox" name=""/> Police Officer
                                                          </label>
-                                         </div>      
-                                                <div class="name-item">
-                                                        <label class="contain">
-                                                            <input type="checkbox" name="alienation[]"  value="Your Mental Health Professional"  /> Your Mental Health Professional
-                                                            <span class="checkmark"></span>
-                                                         </label> 
-                                         </div>      
-                                                <div class="name-item">
-                                                         <label class="contain">
-                                                            <input type="checkbox" name="alienation[]" value="Other Parents Mental Health Professional"  /> Other Parent’s Mental Health Professional
-                                                             <span class="checkmark"></span>
-                                                         </label>   
-                                         </div>
-                                                <div class="name-item">
-                                                         <label class="contain">
-                                                            <input type="checkbox" name="alienation[]" value="Police Officer"   /> Police Officer
-                                                             <span class="checkmark"></span>
-                                                         </label> 
-                                         </div>
-                                                <div class="name-item">
-                                                         <label class="contain">
-                                                            <input type="checkbox" name="alienation[]" value="Other Law Enforcement Professional"  /> Other Law Enforcement Professional
-                                                             <span class="checkmark"></span>
+                                                         <label>
+                                                            <input type="checkbox" name=""/> Other Law Enforcement Professional
                                                          </label>    
-                                         </div>
+                                         </div>      
+
                                                 <div class="name-item">
-                                                         <label class="contain">
-                                                            <input type="checkbox" name="alienation[]" value="Child Welfare Professional"   /> Child Welfare Professional
-                                                             <span class="checkmark"></span>
+                                                         <label>
+                                                            <input type="checkbox" name=""/> Child Welfare Professional
+                                                         </label>
+                                                         <label>
+                                                            <input type="checkbox" name=""/> Your attorney
+                                                         </label>
+                                                        <label>
+                                                            <input type="checkbox" name=""/> Other Parent’s Attorney
+                                                         </label>
+                                                         <label>
+                                                            <input type="checkbox" name=""/> Child’s Attorney or Guardian Ad Litem
                                                          </label>
                                              </div>
-                                                <div class="name-item">
-                                                         <label class="contain">
-                                                            <input type="checkbox" name="alienation[]" value="Your attorney"  /> Your attorney
-                                                             <span class="checkmark"></span>
-                                                         </label>
-                                        </div>
-                                                <div class="name-item">
-                                                        <label class="contain">
-                                                            <input type="checkbox" name="alienation[]"  value="Other Parents Attorney"  /> Other Parent’s Attorney
-                                                            <span class="checkmark"></span>
-                                                         </label>
-                                        </div>
-                                                <div class="name-item">
-                                                         <label class="contain">
-                                                            <input type="checkbox" name="alienation[]" value="Childs Attorney or Guardian Ad Litem"  /> Child’s Attorney or Guardian Ad Litem
-                                                             <span class="checkmark"></span>
-                                                         </label>
-                                        </div>
-                                                
                                              </div>
                                              <h5>Did court accept evidence of abuse claims you submitted (via experts above)? (Y/N)</h5>
                                             <div class="item">
                                                     <div class="name-item">
-                                                    <select name="vacceptEvidence" required>
+                                                    <select name="" required>
                                                             <option value="">Select</option>
-                                                            <option value="yes">Yes</option>
-                                                            <option value="no">No</option>
+                                                            <option value="">Yes</option>
+                                                            <option value="">No</option>
                                                     </select>     
                                             </div>
                                          </div>
@@ -405,10 +342,10 @@
                                              <h5>Did court acknowledge your claims of abuse were credible either in writing or orally at any point? (Y/N)</h5>
                                             <div class="item">
                                                     <div class="name-item">
-                                                    <select name="vcourtAcknowledge" required>
+                                                    <select name="" required>
                                                             <option value="">Select</option>
-                                                            <option value="yes">Yes</option>
-                                                            <option value="no">No</option>
+                                                            <option value="">Yes</option>
+                                                            <option value="">No</option>
                                                     </select>     
                                             </div>
                                          </div>
@@ -416,10 +353,10 @@
                                              <h5>Did court ever order supervised visitation for you? (Y/N)</h5>
                                             <div class="item">
                                                     <div class="name-item">
-                                                    <select name="vsupervisedVisitation" required>
+                                                    <select name="" required>
                                                             <option value="">Select</option>
-                                                            <option value="yes">Yes</option>
-                                                            <option value="no">No</option>
+                                                            <option value="">Yes</option>
+                                                            <option value="">No</option>
                                                     </select>     
                                             </div>
                                          </div>
@@ -427,10 +364,10 @@
                                              <h5>Did you have to pay for supervised visitation? (Y/N)</h5>
                                             <div class="item">
                                                     <div class="name-item">
-                                                    <select name="vpaysupervisedVisitation" required>
+                                                    <select name="" required>
                                                             <option value="">Select</option>
-                                                            <option value="yes">Yes</option>
-                                                            <option value="no">No</option>
+                                                            <option value="">Yes</option>
+                                                            <option value="">No</option>
                                                     </select>     
                                             </div>
                                          </div>
@@ -438,10 +375,10 @@
                                              <h5>Did required payment for supervised visitation prevent you from seeing your child(ren)? (Y/N)</h5>
                                             <div class="item">
                                                     <div class="name-item">
-                                                    <select name="vpaymentPrevention" required>
+                                                    <select name="" required>
                                                             <option value="">Select</option>
-                                                            <option value="yes">Yes</option>
-                                                            <option value="no">No</option>
+                                                            <option value="">Yes</option>
+                                                            <option value="">No</option>
                                                     </select>     
                                             </div>
                                          </div>
@@ -449,11 +386,11 @@
                                              <h5>Who was awarded legal custody in your case?</h5>
                                             <div class="item">
                                                     <div class="name-item">
-                                                    <select name="vawardedlegalCustody" required>
+                                                    <select name="" required>
                                                             <option value="">Select</option>
-                                                            <option value="you">You</option>
-                                                            <option value="other_parent">Other Parent</option>
-                                                            <option value="joint">Joint</option>
+                                                            <option value="">You</option>
+                                                            <option value="">Other Parent</option>
+                                                            <option value="">Joint</option>
                                                     </select>     
                                             </div>
                                          </div>
@@ -461,11 +398,11 @@
                                              <h5>Who was awarded physical custody in your case?</h5>
                                             <div class="item">
                                                     <div class="name-item">
-                                                    <select name="vawardedphysicalCustody" required>
+                                                    <select name="" required>
                                                             <option value="">Select</option>
-                                                            <option value="you">You</option>
-                                                            <option value="other_parent">Other Parent</option>
-                                                            <option value="joint">Joint</option>
+                                                            <option value="">You</option>
+                                                            <option value="">Other Parent</option>
+                                                            <option value="">Joint</option>
                                                     </select>     
                                             </div>
                                          </div>

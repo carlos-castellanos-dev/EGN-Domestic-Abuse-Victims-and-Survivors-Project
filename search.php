@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="icon" href="images/favi.png">
 	</head>
 	<body class="is-preload no-sidebar">
 		<div id="page-wrapper">
@@ -29,7 +30,7 @@
 								<ul>
 									<li class="current"><a href="index.html">Welcome</a></li>
                                     <li><a href="about.html">About Us</a></li>
-                                    <li><a href="dashboard.html">Dashboard</a></li>
+                                    <li><a href="dashboard.php">Dashboard</a></li>
                                     <li><a href="experience.html">Share Your Experience</a></li>
 									<li><a href="search.php">Search</a></li>
 								</ul>
@@ -49,10 +50,7 @@
 
 									<h2>Search</h2>
 
-									<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
-									Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
-									Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi
-									consequat etiam lorem ipsum dolor sit amet nullam.</p>
+									<p>Use this page to search our database of reported court officials </p>
 
 									<h3>Look Up Information</h3>
 									<form action="" method="GET">
@@ -70,7 +68,7 @@
                                             <thead>
                                                 <tr>
                                                     <th>Judge Name</th>
-                                                    <th>Police Officer Name</th>
+                                                    
 													<th> Lawyer Name</th>
                                                 </tr>
                                             </thead>
@@ -91,7 +89,7 @@
                                                                 ?>
                                                                 <tr>
                                                                     <td><?= $items['vJudgesName']; ?></td>
-                                                                    <td><?= $items['vPoliceofficer']; ?></td>
+                                                                    
 																	<td><?= $items['vLawyersname']; ?> </td>
                                                                 </tr>
                                                                 <?php
